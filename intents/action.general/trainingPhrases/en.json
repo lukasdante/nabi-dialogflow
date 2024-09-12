@@ -1,0 +1,275 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Can you please "
+    }, {
+      "text": "place",
+      "parameterId": "action"
+    }, {
+      "text": " the "
+    }, {
+      "text": "red",
+      "parameterId": "color",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "box",
+      "parameterId": "target_object"
+    }, {
+      "text": " "
+    }, {
+      "text": "in",
+      "parameterId": "location"
+    }, {
+      "text": " the "
+    }, {
+      "text": "mat",
+      "parameterId": "target_position"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Please "
+    }, {
+      "text": "put",
+      "parameterId": "action"
+    }, {
+      "text": " the "
+    }, {
+      "text": "red",
+      "parameterId": "color",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "toy",
+      "parameterId": "target_object"
+    }, {
+      "text": " "
+    }, {
+      "text": "on",
+      "parameterId": "location"
+    }, {
+      "text": " the "
+    }, {
+      "text": "mat",
+      "parameterId": "target_position"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Place",
+      "parameterId": "action"
+    }, {
+      "text": " the "
+    }, {
+      "text": "test tube",
+      "parameterId": "target_object"
+    }, {
+      "text": " with the "
+    }, {
+      "text": "red",
+      "parameterId": "color"
+    }, {
+      "text": " liquid "
+    }, {
+      "text": "in",
+      "parameterId": "location"
+    }, {
+      "text": " the "
+    }, {
+      "text": "test tube rack",
+      "parameterId": "target_position"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Put",
+      "parameterId": "action"
+    }, {
+      "text": " the "
+    }, {
+      "text": "red",
+      "parameterId": "color",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "toy",
+      "parameterId": "target_object"
+    }, {
+      "text": " "
+    }, {
+      "text": "on",
+      "parameterId": "location"
+    }, {
+      "text": " the "
+    }, {
+      "text": "mat",
+      "parameterId": "target_position"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Put",
+      "parameterId": "action"
+    }, {
+      "text": " the "
+    }, {
+      "text": "glass",
+      "parameterId": "target_object"
+    }, {
+      "text": " "
+    }, {
+      "text": "in",
+      "parameterId": "location"
+    }, {
+      "text": " the "
+    }, {
+      "text": "target",
+      "parameterId": "target_position"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Place",
+      "parameterId": "action"
+    }, {
+      "text": " the "
+    }, {
+      "text": "glass",
+      "parameterId": "target_object"
+    }, {
+      "text": " "
+    }, {
+      "text": "in",
+      "parameterId": "location"
+    }, {
+      "text": " the "
+    }, {
+      "text": "mark",
+      "parameterId": "target_position"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Place",
+      "parameterId": "action"
+    }, {
+      "text": " the "
+    }, {
+      "text": "paper",
+      "parameterId": "target_object"
+    }, {
+      "text": " "
+    }, {
+      "text": "inside",
+      "parameterId": "location"
+    }, {
+      "text": " the "
+    }, {
+      "text": "box",
+      "parameterId": "target_position"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Hold",
+      "parameterId": "action"
+    }, {
+      "text": " the "
+    }, {
+      "text": "object",
+      "parameterId": "target_object"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Pick up",
+      "parameterId": "action"
+    }, {
+      "text": " the "
+    }, {
+      "text": "red",
+      "parameterId": "color",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "paper",
+      "parameterId": "target_object"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Help me "
+    }, {
+      "text": "pick up",
+      "parameterId": "action"
+    }, {
+      "text": " the "
+    }, {
+      "text": "blue",
+      "parameterId": "color"
+    }, {
+      "text": " "
+    }, {
+      "text": "test tube",
+      "parameterId": "target_object"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Help me "
+    }, {
+      "text": "pick up",
+      "parameterId": "action"
+    }, {
+      "text": " the "
+    }, {
+      "text": "red",
+      "parameterId": "color",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "box",
+      "parameterId": "target_object"
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

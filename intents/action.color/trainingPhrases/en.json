@@ -1,0 +1,182 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "that is yellow",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "that is ",
+      "auto": true
+    }, {
+      "text": "green",
+      "parameterId": "color",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "that is ",
+      "auto": true
+    }, {
+      "text": "blue",
+      "parameterId": "color",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "it's ",
+      "auto": true
+    }, {
+      "text": "blue",
+      "parameterId": "color",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "it is ",
+      "auto": true
+    }, {
+      "text": "blue",
+      "parameterId": "color",
+      "auto": true
+    } ],
+    "repeatCount": 2,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "blue",
+      "parameterId": "color",
+      "auto": true
+    } ],
+    "repeatCount": 2,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "red",
+      "parameterId": "color",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "yellow",
+      "parameterId": "color",
+      "auto": true
+    } ],
+    "repeatCount": 2,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "green",
+      "parameterId": "color",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "purple",
+      "parameterId": "color",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "it's ",
+      "auto": true
+    }, {
+      "text": "purple",
+      "parameterId": "color",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "the object is ",
+      "auto": true
+    }, {
+      "text": "purple",
+      "parameterId": "color",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "the box is ",
+      "auto": true
+    }, {
+      "text": "green",
+      "parameterId": "color",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "the glass is ",
+      "auto": true
+    }, {
+      "text": "red",
+      "parameterId": "color",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "the box is ",
+      "auto": true
+    }, {
+      "text": "yellow",
+      "parameterId": "color",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "it is ",
+      "auto": true
+    }, {
+      "text": "yellow",
+      "parameterId": "color",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "it's ",
+      "auto": true
+    }, {
+      "text": "red",
+      "parameterId": "color",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "it is ",
+      "auto": true
+    }, {
+      "text": "red",
+      "parameterId": "color",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

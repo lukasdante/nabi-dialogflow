@@ -1,0 +1,22 @@
+{
+  "name": "40042c5f-f98e-412e-ba2e-d884b1da5e26",
+  "displayName": "action.general",
+  "parameters": [ {
+    "id": "color",
+    "entityType": "@sys.color"
+  }, {
+    "id": "action",
+    "entityType": "@sys.any"
+  }, {
+    "id": "target_object",
+    "entityType": "@sys.any"
+  }, {
+    "id": "target_position",
+    "entityType": "@sys.any"
+  }, {
+    "id": "location",
+    "entityType": "@sys.location"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 11
+}

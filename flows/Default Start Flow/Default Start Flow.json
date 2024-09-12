@@ -1,0 +1,89 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hi! Nabi here. How are you doing?", "Hello! How can Nabi help you?", "Good day! What can Nabi do for you today?", "Greetings! Nabi here. How can I assist?", "Your best collaborative robot, Nabi, is here! How can I help you?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "e8fe45bf-8d4d-4970-a9a8-3784442ddb23"
+  }, {
+    "intent": "about.general",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I am Nabi, a collaborative robot built by NabiTech LLC in partnership with TUP Manila using advanced robotic simulations and AI. Would you like to know more about me?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "About",
+    "name": "495186d4-d4f3-48e1-9a3c-2f2e8abfa170"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay, tell me if you need any help!", "Okay, I'm here if you have any questions!", "Okay! Let me know if you need something!", "Just give me a heads up if you need anything!" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "a9f45414-eb79-4bb1-b70e-fbfc19332b10"
+  }, {
+    "intent": "action.general",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Action Flow",
+    "name": "0fac9eec-18c9-4437-80d5-d56e4a42c2cd"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "8f5e9e5d-2056-4270-a35e-7e76b76d145f"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "ec1d28b9-146c-442e-b6ed-0a595ddae794"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "2c1fe77b-41d1-4885-9280-d81a6ae6b634",
+    "languageCode": "en"
+  } ]
+}

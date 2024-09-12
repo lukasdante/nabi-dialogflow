@@ -1,0 +1,48 @@
+{
+  "defaultLanguageCode": "en",
+  "timeZone": "Asia/Hong_Kong",
+  "projectNumber": 454050434860,
+  "speechToTextSettings": {
+    "enableSpeechAdaptation": true
+  },
+  "startFlow": "Default Start Flow",
+  "enableSpellCorrection": true,
+  "advancedSettings": {
+    "audioExportGcsDestination": {
+    
+    },
+    "speechSettings": {
+      "endpointerSensitivity": 90,
+      "noSpeechTimeout": {
+        "seconds": 5
+      }
+    },
+    "playbackInterruptionSettings": {
+    
+    },
+    "loggingSettings": {
+    
+    }
+  },
+  "dataResidencyOption": "DATA_RESIDENCY_IN_USE_COMPLIANT",
+  "speakerIdSettings": {
+  
+  },
+  "textToSpeechSettings": {
+    "synthesizeSpeechConfigs": [ {
+      "key": "en",
+      "value": {
+        "voice": {
+          "name": "en-AU-Neural2-C",
+          "ssmlGender": "SSML_VOICE_GENDER_FEMALE"
+        }
+      }
+    } ]
+  },
+  "duplexSettings": {
+  
+  },
+  "webClientSettings": {
+    "boxBorderRadius": "0"
+  }
+}

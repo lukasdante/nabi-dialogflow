@@ -1,0 +1,60 @@
+{
+  "name": "8ab6a15b-ed64-4b7a-b525-d2a9d643d3f2",
+  "displayName": "Action Flow",
+  "transitionRoutes": [ {
+    "intent": "action.general",
+    "condition": "$session.params.color != null AND $session.params.target_object != null AND $session.params.target_position != null AND $session.params.action != null",
+    "triggerFulfillment": {
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Confirm Action",
+    "name": "55f7c568-b34e-491f-b0c5-ac9018be6530",
+    "description": "Route for complete action commands"
+  }, {
+    "intent": "action.general",
+    "condition": "$session.params.color = null",
+    "triggerFulfillment": {
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Missing Color",
+    "name": "06445e93-9ee2-4866-b521-e7a4965a53b1",
+    "description": "Route for missing color."
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "36b1bcb0-ab6c-4f18-8b00-f2b33d9590f4"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "5eda61e4-d681-47f8-8539-7206b1fa54e4"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "6f620f52-706d-4de7-b48e-69b303157396",
+    "languageCode": "en"
+  } ]
+}

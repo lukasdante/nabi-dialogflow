@@ -1,0 +1,10 @@
+{
+  "name": "4c81b2a2-91bd-4c3a-bffb-5c79a609c22a",
+  "displayName": "action.color",
+  "parameters": [ {
+    "id": "color",
+    "entityType": "@sys.color"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 18
+}
