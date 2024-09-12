@@ -2,6 +2,7 @@ import base64
 import requests
 import json
 import os
+from dotenv import load_dotenv
 
 # Function to encode the WAV file in base64
 def encode_audio(audio_file):
@@ -48,7 +49,8 @@ def transcribe_audio(api_key, audio_file, language="en-US"):
 
 if __name__ == "__main__":
     # Replace with your actual API key
-    api_key = os.getenv('API_KEY')
+    load_dotenv()
+    api_key = os.getenv('STT_API_KEY')
 
     # Temporary WAV file path
     wav_file = "output.wav"
