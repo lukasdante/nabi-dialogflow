@@ -4,6 +4,8 @@ import requests
 from google.auth import jwt as google_jwt
 from google.auth import crypt
 from base64 import b64decode
+import os
+from dotenv import load_dotenv
 
 def json_write(text, 
                languageCode="en-US",
@@ -29,7 +31,7 @@ def json_write(text,
 
 def init_tts(data):
     # Path to your Service Account JSON key
-    SERVICE_ACCOUNT_FILE = "nabi-cobot-e204d66e2f57.json"
+    SERVICE_ACCOUNT_FILE = os.getenv("TTS_SERVICE_ACCOUNT")
     
     # Google OAuth 2.0 token endpoint
     TOKEN_URL = "https://oauth2.googleapis.com/token"
@@ -92,7 +94,10 @@ def decode_tts_output(input, output_file):
         new_file.write(b64decode(audio_data))
 
 if __name__ == "__main__":
+    load_dotenv()
+
     sample_text = "I am Nabi, your favorite collaborative robot."
+    
     data = json_write(sample_text)
     api_response = init_tts(data)
     decode_tts_output(api_response, "synthesize-text-audio.mp3")
