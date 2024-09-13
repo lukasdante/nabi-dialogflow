@@ -40,21 +40,21 @@ def transcribe_audio(api_key, audio_file, language="en-US"):
         if 'results' in result:
             for res in result['results']:
                 print(f"Transcript: {res['alternatives'][0]['transcript']}")
+                os.remove(audio_file)
+                return res['alternatives'][0]['transcript']
         else:
             print("No transcription found")
     else:
         print(f"Error: {response.status_code}, {response.text}")
 
-    os.remove(audio_file)
-
 if __name__ == "__main__":
     # Replace with your actual API key
     load_dotenv()
-    api_key = os.getenv('STT_API_KEY')
+    STT_API_KEY = os.getenv('STT_API_KEY')
 
     # Temporary WAV file path
     wav_file = "output.wav"
 
     # Transcribe the converted WAV audio
-    transcribe_audio(api_key, wav_file)
+    transcribe_audio(STT_API_KEY, wav_file)
     

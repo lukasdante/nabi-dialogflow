@@ -15,11 +15,11 @@ def get_volume(data):
     audio_data = np.frombuffer(data, dtype=np.int16)
     return np.abs(audio_data).mean()
 
-def is_silent(data):
+def is_silent(data, threshold):
     """Returns 'True' if the audio is silent below the threshold."""
-    return get_volume(data) < THRESHOLD
+    return get_volume(data) < threshold
 
-def record_audio(output_filename="output.wav"):
+def record_audio(output_filename="output.wav", threshold=THRESHOLD):
     """Record audio until silence is detected."""
     p = pyaudio.PyAudio()
     stream = p.open(format=FORMAT,
@@ -41,7 +41,7 @@ def record_audio(output_filename="output.wav"):
         volume = get_volume(data)
         print(f"Current volume: {volume}")
         
-        if is_silent(data):
+        if is_silent(data, THRESHOLD):
             silent_chunks += 1
         else:
             silent_chunks = 0
