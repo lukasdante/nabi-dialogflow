@@ -6,6 +6,8 @@ from play_sound import play_mp3
 from dotenv import load_dotenv
 import os
 import uuid
+import json
+import datetime
 
 def record_and_transcribe():
     try:
@@ -26,13 +28,16 @@ def record_and_transcribe():
         # play the audio output
         play_mp3("synthesize-text-audio.mp3")
 
+        print(parameters)
+
         return parameters
 
     except Exception as e:
         print(e)
 
 if __name__ == "__main__":
-    SESSION_ID = uuid.uuid4() 
+    SESSION_ID = uuid.uuid4()
+    terminate = False
 
     load_dotenv()
     STT_API_KEY = os.getenv('STT_API_KEY')
@@ -47,6 +52,12 @@ if __name__ == "__main__":
         print(terminate)
         parameters = record_and_transcribe()
         print(parameters['terminate'])
+
+        parameters['session'] = str(SESSION_ID)
+        parameters['timestamp'] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+        with open("parameters.txt", "a") as f:
+            json.dump(parameters, f)
 
         if parameters['terminate'] == "True":
             terminate = True
