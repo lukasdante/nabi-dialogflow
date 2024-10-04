@@ -6,3 +6,15 @@ env
 env/*
 
 nabi-cobot-e204d66e2f57.json
+__pycache__
+__pycache__/*
+migrations
+migrations/*
+
+*json
+
+parameters.txt
+notes.txt
+
+*.wav
+*.mp3

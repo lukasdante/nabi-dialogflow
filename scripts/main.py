@@ -2,7 +2,7 @@ from recorder import record_audio
 from stt_request import transcribe_audio
 from detect_intent import detect_intent_text
 from tts_request import init_tts, decode_tts_output, json_write
-from play_sound import play_mp3
+from play_sound import play_wav
 from dotenv import load_dotenv
 import os
 import uuid
@@ -23,10 +23,10 @@ def record_and_transcribe():
         # decode the response to an audio output
         data = json_write(response)
         api_response = init_tts(data)
-        decode_tts_output(api_response, "synthesize-text-audio.mp3")
+        decode_tts_output(api_response, "response.wav")
         
         # play the audio output
-        play_mp3("synthesize-text-audio.mp3")
+        play_wav("response.wav")
 
         print(parameters)
 
@@ -35,11 +35,13 @@ def record_and_transcribe():
     except Exception as e:
         print(e)
 
-if __name__ == "__main__":
-    SESSION_ID = uuid.uuid4()
-    terminate = False
 
-    load_dotenv()
+def generate_session_id():
+    return uuid.uuid4()
+
+if __name__ == "__main__":
+    SESSION_ID = generate_session_id()
+    load_dotenv(override=True)
     STT_API_KEY = os.getenv('STT_API_KEY')
     TTS_API_KEY = os.getenv('TTS_API_KEY')
     PROJECT_ID = os.getenv("DFCX_PROJECT_ID")
@@ -48,16 +50,18 @@ if __name__ == "__main__":
     service_account_path = os.getenv("DFCX_SERVICE_ACCOUNT")
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = service_account_path
 
+    terminate = False
     while not terminate:
-        print(terminate)
         parameters = record_and_transcribe()
-        print(parameters['terminate'])
 
         parameters['session'] = str(SESSION_ID)
         parameters['timestamp'] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
         with open("parameters.txt", "a") as f:
             json.dump(parameters, f)
+            f.write('\n')
 
         if parameters['terminate'] == "True":
             terminate = True
+
+            # locate 

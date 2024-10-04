@@ -11,7 +11,7 @@ def json_write(text,
                languageCode="en-US",
                languageName="en-US-Neural2-C",
                gender="FEMALE",
-               encoding="MP3"):
+               encoding="LINEAR16"):  # Change encoding to LINEAR16 for WAV
     data = {
         "input": {
             "text": f"{text}"
@@ -26,7 +26,7 @@ def json_write(text,
         }
     }
 
-    # Path to the JSON file
+    # Return JSON as a string
     return json.dumps(data)
 
 def init_tts(data):
@@ -90,6 +90,7 @@ def decode_tts_output(input, output_file):
     response = json.loads(input)
     audio_data = response['audioContent']
 
+    # Decode base64 to binary data and save as .wav
     with open(output_file, "wb") as new_file:
         new_file.write(b64decode(audio_data))
 
@@ -98,6 +99,7 @@ if __name__ == "__main__":
 
     sample_text = "I am Nabi, your favorite collaborative robot."
     
+    # Get the data with LINEAR16 encoding
     data = json_write(sample_text)
     api_response = init_tts(data)
-    decode_tts_output(api_response, "synthesize-text-audio.mp3")
+    decode_tts_output(api_response, "synthesize-text-audio.wav")
