@@ -1,0 +1,28 @@
+{% extends 'boilerplate/sidebar.html' %}
+{% load static %}
+{% block content %}
+
+<div class="page-title">Develop</div>
+<div class="description">NabiTech is a firm believer of <strong>open-sourcing</strong>. Every program that makes Nabi Cobot itself is a testament of this, albeit some of the work that are unstable or poses danger are close-sourced. <strong>Nabi Local Server</strong> is a highly extensible application that isn’t built on top of any framework but a locally hosted Django server which is ran using terminal scripts. This eliminates any build dependencies at a cost of a few installation requirements which is documented. It is modular, you can add any component based on your use case. The core idea of this server is to connect multiple Nabi Cobots in your workspace and control them in a single server. With time, we hope to implement this as a single module installable with PyPi.</div>
+<hr style="margin-top:50px;">
+
+<div class="main-content develop">
+    <div class="page-header">Running the Code</div>
+    <div class="description">Your Nabi Cobot is equipped with the right dependencies to run most of the code. However, if you intend to perform a fresh installation, you can complete these steps.</div>
+    <div class="description newp">Clone the GitHub repository.</div>
+    <div class="codecell"><span class='cmd'>git</span> clone https://github.com/lukasdante/nabi-dialogflow</div>
+    <div class="description newp">Create a virtual environment using conda or Python 3. Installation instructions for conda are found here. In this documentation, we will be using Python’s virtual environment.</div>
+    <div class="codecell"><span class='cmd'>python</span> -m venv env <span class='cmt'># you can change env to preferred name</span></div>
+    <div class="description newp">Activate your virtual environment</div>
+    <div class="codecell"><span class='cmd'>source</span> env/bin/activate</div>
+    <div class="description newp">In your terminal, use pip to install all necessary requirements for running the code.</div>
+    <div class="codecell"><span class='cmd'>pip</span> install -r requirements.txt</div>
+    <div class="description newp">You may need to install these build dependencies first.</div>
+    <div class="codecell"><span class='cmd'>sudo</span> apt-get install cmake build-essential libasound2-dev<br><span class='cmd'>sudo</span> apt-get update</div>
+    <div class="description newp">Once that you have installed these dependencies, or this isn’t a fresh installation, you can simply run the server.</div>
+    <div class="codecell"><span class='cmd'>cd</span> pages<br><span class='cmd'>python</span> manage.py runserver</div>
+    <div class="description newp">If you followed the steps correctly, a local host network will be provided like this.</div>
+    <div class="codecell">http://127.0.0.1:8000/</div>
+    <div class="end"></div>
+</div>
+    {% endblock %}

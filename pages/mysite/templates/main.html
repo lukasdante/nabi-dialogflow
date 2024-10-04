@@ -1,0 +1,89 @@
+{% extends 'boilerplate/sidebar.html' %}
+{% load static %}
+{% block content %}
+
+<div class="dropdown-row">
+    <div class="dropdown-item">
+        <label for="cobot">Choose Cobot</label>
+        <select class="dropdown-options" name="cobot" required>
+            <option value="">Nabi Uno</option>
+            <option value="">Nabi Dos</option>
+            <option value="">Nabi Tres</option>
+        </select>
+    </div>
+    <div class="dropdown-item">
+        <label for="date-and-time-format">Date and Time Format</label>
+        <select class="dropdown-options" name="date-and-time-format" required>
+            <option value="">10-07-23 13:00</option>
+            <option value="">100723:1300</option>
+            <option value="">100723-1300</option>
+        </select>
+    </div>
+    <div class="dropdown-item">
+        <label>Status</label>
+        Running
+    </div>
+    <div class="dropdown-item">
+        <label>Session ID</label>
+        {%% session_id %%}
+    </div>
+</div>
+<div class="kpis">
+    <div class="kpi">
+        <div class="kpi-value">120</div>
+        <div class="kpi-descriptor">messages delivered</div>
+    </div>    
+    <div class="kpi">
+        <div class="kpi-value">65</div>
+        <div class="kpi-descriptor">generative calls</div>
+    </div>    
+    <div class="kpi">
+        <div class="kpi-value">48</div>
+        <div class="kpi-descriptor">minutes spent</div>
+    </div>    
+    <div class="kpi">
+        <div class="kpi-value">58</div>
+        <div class="kpi-descriptor">actions performed</div>
+    </div>    
+    <div class="kpi">
+        <div class="kpi-value">988</div>
+        <div class="kpi-descriptor">objects detected</div>
+    </div>    
+</div>
+<div class="sessions">
+    <div class="parameter-lookup">
+        <div class="session-title">
+            Parameter Lookup
+        </div>
+        <div class="session-content">
+            Sample content
+        </div>
+    </div>
+    <div class="session-lookup">
+        <div class="session-header">
+            <div class="session-title">
+                Session Data
+            </div>
+            <div class="session-searchbar"></div>
+            <div class="session-content">
+                Sample Data
+            </div>
+        </div>
+    </div>
+</div>
+<div class="plots">
+    <div class="message-frequency-plot">
+        <div class="plot-title">Request Traffic</div>
+        <div class="plot">Sample plot</div>
+    </div>
+    <div class="joint-pos-and-vel-plot">
+        <div class="plot-title">Joint Position and Velocities</div>
+        <div class="plot">Sample plot</div>
+    </div>
+</div>
+<div class="terminal">
+    <div class="terminal-title">Real Time Terminal Field</div>
+    <div class="terminal-container">Sample terminal</div>
+</div>
+<div class="end"></div>
+{% endblock %}

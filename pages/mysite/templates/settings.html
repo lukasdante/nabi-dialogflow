@@ -1,0 +1,146 @@
+{% extends 'boilerplate/sidebar.html' %}
+{% load static %}
+{% block content %}
+<div class="page-title">
+    Settings
+</div>
+<hr>
+<div class="main-content">
+    <div class="page-header">Conversational</div>
+    <div class="description">Configure conversational agent settings including hardware accessibility and Dialogflow CX configurations.</div>
+    <div class="settings-toggle-buttons">
+        <div class="toggle-button-item">
+            <div class="toggle-button-icon">
+                <svg width="26" height="13" viewBox="0 0 26 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.5 0H6.5C2.912 0 0 2.912 0 6.5C0 10.088 2.912 13 6.5 13H19.5C23.088 13 26 10.088 26 6.5C26 2.912 23.088 0 19.5 0ZM19.5 10.4C17.342 10.4 15.6 8.658 15.6 6.5C15.6 4.342 17.342 2.6 19.5 2.6C21.658 2.6 23.4 4.342 23.4 6.5C23.4 8.658 21.658 10.4 19.5 10.4Z" fill="#0093FF"/>
+                </svg>                    
+            </div>
+            <div class="toggle-button-description">Enable hardware-integrated voice interactions.</div>
+        </div>
+        <div class="toggle-button-item">
+            <div class="toggle-button-icon">
+                <svg width="26" height="13" viewBox="0 0 26 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.5 0H6.5C2.912 0 0 2.912 0 6.5C0 10.088 2.912 13 6.5 13H19.5C23.088 13 26 10.088 26 6.5C26 2.912 23.088 0 19.5 0ZM19.5 10.4C17.342 10.4 15.6 8.658 15.6 6.5C15.6 4.342 17.342 2.6 19.5 2.6C21.658 2.6 23.4 4.342 23.4 6.5C23.4 8.658 21.658 10.4 19.5 10.4Z" fill="#0093FF"/>
+                </svg> 
+            </div>
+            <div class="toggle-button-description">Enable voice-activated new session creation.</div>
+        </div>
+        <div class="toggle-button-item">
+            <div class="toggle-button-icon">
+                <svg width="26" height="13" viewBox="0 0 26 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.5 0H6.5C2.912 0 0 2.912 0 6.5C0 10.088 2.912 13 6.5 13H19.5C23.088 13 26 10.088 26 6.5C26 2.912 23.088 0 19.5 0ZM19.5 10.4C17.342 10.4 15.6 8.658 15.6 6.5C15.6 4.342 17.342 2.6 19.5 2.6C21.658 2.6 23.4 4.342 23.4 6.5C23.4 8.658 21.658 10.4 19.5 10.4Z" fill="#0093FF"/>
+                </svg>
+            </div>
+            <div class="toggle-button-description">Enable voice-activated session termination.</div>
+        </div>
+    </div>
+    <div class="settings-dropdowns">
+        <div class="dropdown-row">
+            <div class="dropdown-item">
+                <label for="region">Region</label>
+                <select class="dropdown-options" name="region" required>
+                    <option value="">Asia - Southeast1</option>
+                    <option value="">Asia - Southeast2</option>
+                    <option value="">Asia - Southeast3</option>
+                </select>
+            </div>
+            <div class="dropdown-item">
+                <label for="llm-calls">LLM Call Limit</label>
+                <input type="number" class="dropdown-options" placeholder="100" name="llm-calls" min="0" max="500">
+            </div>
+            <div class="dropdown-item">
+                <label for="voice-type">Voice Type</label>
+                <select class="dropdown-options" name="voice-type" required>
+                    <option value="">Neural-C</option>
+                    <option value="">Wavenet-C</option>
+                    <option value="">Standard</option>
+                </select>
+            </div>
+        </div>
+        <div class="dropdown-row">
+            <div class="dropdown-item">
+                <label for="agent-type">Region</label>
+                <select class="dropdown-options" name="agent-type" required>
+                    <option value="">Verbose Nabi</option>
+                    <option value="">Concise Nabi</option>
+                    <option value="">Quiet Nabi</option>
+                </select>
+            </div>
+            <div class="dropdown-item">
+                <label for="voice-gender">Voice Gender</label>
+                <select class="dropdown-options" name="voice-gender" required>
+                    <option value="">Female</option>
+                    <option value="">Male</option>
+                </select>
+            </div>
+            <div class="dropdown-item">
+                <div class="option-notes">Play sample sound</div>
+                <select class="dropdown-options" name="region" required>
+                    <option value="">a</option>
+                    <option value="">b</option>
+                    <option value="">c</option>label
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-content">
+    <div class="page-header">Logging</div>
+    <div class="description">Configure logging properties including plotting, archiving, and output properties.</div>
+    <div class="settings-toggle-buttons">
+        <div class="toggle-button-item">
+            <div class="toggle-button-icon">
+                <svg width="26" height="13" viewBox="0 0 26 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.5 0H6.5C2.912 0 0 2.912 0 6.5C0 10.088 2.912 13 6.5 13H19.5C23.088 13 26 10.088 26 6.5C26 2.912 23.088 0 19.5 0ZM19.5 10.4C17.342 10.4 15.6 8.658 15.6 6.5C15.6 4.342 17.342 2.6 19.5 2.6C21.658 2.6 23.4 4.342 23.4 6.5C23.4 8.658 21.658 10.4 19.5 10.4Z" fill="#0093FF"/>
+                </svg>                    
+            </div>
+            <div class="toggle-button-description">Enable automatic session data archiving.</div>
+        </div>
+        <div class="toggle-button-item">
+            <div class="toggle-button-icon">
+                <svg width="26" height="13" viewBox="0 0 26 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.5 0H6.5C2.912 0 0 2.912 0 6.5C0 10.088 2.912 13 6.5 13H19.5C23.088 13 26 10.088 26 6.5C26 2.912 23.088 0 19.5 0ZM19.5 10.4C17.342 10.4 15.6 8.658 15.6 6.5C15.6 4.342 17.342 2.6 19.5 2.6C21.658 2.6 23.4 4.342 23.4 6.5C23.4 8.658 21.658 10.4 19.5 10.4Z" fill="#0093FF"/>
+                </svg> 
+            </div>
+            <div class="toggle-button-description">Include timestamps in logging document.</div>
+        </div>
+        <div class="toggle-button-item">
+            <div class="toggle-button-icon">
+                <svg width="26" height="13" viewBox="0 0 26 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.5 0H6.5C2.912 0 0 2.912 0 6.5C0 10.088 2.912 13 6.5 13H19.5C23.088 13 26 10.088 26 6.5C26 2.912 23.088 0 19.5 0ZM19.5 10.4C17.342 10.4 15.6 8.658 15.6 6.5C15.6 4.342 17.342 2.6 19.5 2.6C21.658 2.6 23.4 4.342 23.4 6.5C23.4 8.658 21.658 10.4 19.5 10.4Z" fill="#0093FF"/>
+                </svg>
+            </div>
+            <div class="toggle-button-description">Enable logging descriptors in logging document.</div>
+        </div>
+    </div>
+    <div class="settings-dropdowns">
+        <div class="dropdown-row">
+            <div class="dropdown-item">
+                <label for="logging-output">Logging Output</label>
+                <select class="dropdown-options" name="logging-output" required>
+                    <option value="">Text file</option>
+                    <option value="">JSON file</option>
+                    <option value="">Pandas DataFrame</option>
+                </select>
+            </div>
+            <div class="dropdown-item">
+                <label for="date-and-time-format">Date and Time Format</label>
+                <select class="dropdown-options" name="date-and-time-format" required>
+                    <option value="">10-07-23 13:00</option>
+                    <option value="">100723:1300</option>
+                    <option value="">100723-1300</option>
+                </select>
+            </div>
+            <div class="dropdown-item">
+                <label for="output-directory">Output Directory</label>
+                <input type="text" class="dropdown-options" placeholder="logs/">
+            </div>
+        </div>
+    </div>
+    <div class="note">
+        We hope to make this more personalized for you. Contribute by forking our GitHub repository or email us at nabiTech@gmail.com.
+    </div>
+    <div class="end"></div>
+</div>
+
+{% endblock %}
